@@ -4,16 +4,12 @@ int main()
 {
     int num;
     int sum=0;
-    cout<<"Enter a number ";
-    cin>>num;cout<<endl;
+    cout<<"Enter a number "<<endl;
+    cin>>num;
     while(num!=0)
     {
-      
-       num= num/10;
-       sum++;
-
-
+        sum=sum+(num%10);
+        num=num/10;
     }
     cout<<sum;
-
 }
